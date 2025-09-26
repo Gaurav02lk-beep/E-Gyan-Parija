@@ -1,0 +1,7 @@
+{
+  "name": "E-Gyan Parija",
+  "description": "A comprehensive digital library platform designed to streamline the storage, distribution, access, and management of digital books. It supports multiple user roles, subscription-based access, and AI-powered features for recommendations and accessibility.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

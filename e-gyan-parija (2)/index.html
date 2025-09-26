@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" style="scroll-padding-top: 72px;">
+  <head>
+    <meta charset="UTF-T" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Gyan Parija</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            animation: {
+                'fade-in-down': 'fade-in-down 0.5s ease-out forwards',
+                'fade-in-up': 'fade-in-up 0.7s ease-out forwards',
+                'ken-burns': 'ken-burns 20s ease-out infinite',
+                'subtle-pulse': 'subtle-pulse 2.5s ease-in-out infinite',
+                'gradient-pan': 'gradient-pan 15s ease infinite',
+                'ai-glow': 'ai-glow 2s ease-in-out infinite',
+                'subtle-breathing': 'subtle-breathing 4s ease-in-out infinite',
+            },
+            keyframes: {
+                'fade-in-down': {
+                    '0%': { opacity: '0', transform: 'translateY(-20px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
+                },
+                'fade-in-up': {
+                    '0%': { opacity: '0', transform: 'translateY(30px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
+                },
+                'ken-burns': {
+                    '0%': { transform: 'scale(1) translate(0, 0)' },
+                    '50%': { transform: 'scale(1.1) translate(-5px, 5px)' },
+                    '100%': { transform: 'scale(1) translate(0, 0)' },
+                },
+                'subtle-pulse': {
+                    '0%': { transform: 'scale(1)' },
+                    '50%': { transform: 'scale(1.05)' },
+                    '100%': { transform: 'scale(1)' },
+                },
+                'gradient-pan': {
+                    '0%': { 'background-position': '0% 50%' },
+                    '50%': { 'background-position': '100% 50%' },
+                    '100%': { 'background-position': '0% 50%' },
+                },
+                'ai-glow': {
+                    '0%, 100%': { 'box-shadow': '0 0 5px #a5b4fc, 0 0 10px #a5b4fc, 0 0 15px #a5b4fc' },
+                    '50%': { 'box-shadow': '0 0 10px #818cf8, 0 0 20px #818cf8, 0 0 30px #818cf8' },
+                },
+                'subtle-breathing': {
+                    '0%, 100%': { transform: 'scale(1)' },
+                    '50%': { transform: 'scale(1.03)' },
+                },
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 text-slate-800 font-sans antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
